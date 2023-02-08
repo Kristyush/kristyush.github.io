@@ -9,9 +9,11 @@
 <body style='margin : 0px; overflow: hidden;'>
   <a-scene embedded arjs='sourceType: webcam;'>
   	<!-- <a-box position='0 0.5 0' material='color: green;'></a-box> -->
+
+<a-marker preset='hiro'>
 	<a-entity gltf-model="url(matresh.glb)" scale="0.5 0.5 0.5"  animation-mixer></a-entity>
-	<a-marker-camera preset='custom' type='pattern' url='pattern-qr-code.patt'>
-    </a-marker-camera>
+ </a-marker>
+
     <a-entity camera></a-entity>
   </a-scene>
 </body>
