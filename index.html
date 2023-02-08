@@ -5,7 +5,10 @@
 
     <!-- handle marker with hiro preset -->
     <a-marker preset='hiro'>
-      <a-box position='0 0.5 0' material='color: green;'></a-box>
+		<a-assets>
+  			<a-asset-item id="tree" src="/models/berry.gltf"></a-asset-item>
+		</a-assets>
+	<a-entity gltf-model="##tree"></a-entity>
     </a-marker>
 
     <!-- add a simple camera -->
