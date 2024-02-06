@@ -13,12 +13,11 @@
         <a-entity scale="0.1 0.1 0.1" position="0 1 0.5" id="owl"></a-entity>
         <a-entity text="value: Bitergia; color: orange;" scale="10 10 1" position="3.3 0.65 -0.8">
         </a-entity>
-        <a-plane rotation="-90 0 0" width="1" height="1" color="orange"></a-plane>
-          <a-animation attribute="rotation"
-               dur="10000"
-               fill="forwards"
-               to="0 360 0"
-               repeat="indefinite"></a-animation>
+		<a-sphere color="blue" radius="0.5" position="0 0.5 0" segments-height="53"
+			animation='   property: position; dur: 5000; from: -2 0.5 0; to: 2 0.5 0; dir: alternate; easing: linear; loop: true;'
+			animation__2='property: rotation; dur: 1000; from: 0 0 0;    to: 0 360 0; dir: normal;    easing: linear; loop: true;'
+			animation__3='property:    scale; dur: 1000; from: 1 1 1;    to: 2 2 2;   dir: alternate; easing: linear; loop: true;'>
+		</a-sphere>
       </a-entity>
 
       <a-marker-camera preset='custom' type='pattern' url='pattern-marker.patt'></a-marker-camera>
